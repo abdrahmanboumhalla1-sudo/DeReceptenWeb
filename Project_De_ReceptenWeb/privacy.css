@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://www.creativefabrica.com/wp-content/uploads/2024/06/25/Vintage-Kitchen-Counter-Background-Graphics-100379210-1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(80, 35, 20);
+}
+
+header{
+  text-align: center;
+  margin-top: 30px;
+}
+
+header h1 {
+  color: rgb(139, 60, 40);
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: rgb(139, 60, 40);
+  border: 2px solid rgb(139, 60, 40);
+  padding: 8px 18px;
+  margin: 5px;
+  border-radius: 6px;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: rgb(139, 60, 40);
+  color: white;
+}
+
+.privacy-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 30px 40px;
+  transition: 0.2s ease, background-color 0.2s ease;
+}  
+
+
+.privacy-container:hover{
+
+  background-color:  rgba(255, 240, 230, 0.95) ;
+  cursor: pointer;
+  transform: scale(1.02);
+
+}
+
+
+
+
+
+h2 {
+  color: rgb(139, 60, 40);
+  border-bottom: 2px solid rgb(139, 60, 40);
+  padding-bottom: 4px;
+  margin-top: 25px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+a {
+  color: rgb(139, 60, 40);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(100, 40, 20);
+}
+
+.R2 {
+  text-align: center;
+  opacity: 0.8;
+  font-size: 14px;
+  margin: 40px 0 20px;
+  color: rgb(139, 60, 40);
+}
+
+
+/* Loader */
+.loader-screen {
+    position: fixed;
+    inset: 0;
+    background:  rgb(218, 172, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 0.5s; /* loader duurt 1 sec */
+}
+
+/* Spinner */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #444;
+    border-top-color: rgba(139, 60, 40, 0.55);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Verdwijnt automatisch */
+@keyframes fadeOut {
+    to { opacity: 0; visibility: hidden; }
+}
